@@ -1,27 +1,7 @@
 <h2 align="center">
   Avinash Nutalapati's Cybersecurity Portfolio - v2.0<br/>
-  <a href="https://avinashnutalapati.vercel.app/" target="_blank">avinashnutalapati.tech</a>
 </h2>
 
-
-<br/>
-
-<center>
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/secured-by-cybersecurity-experts.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/avinashnutalapati/Portfolio?color=blue&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/avinashnutalapati/Portfolio?color=blue&logo=github&style=for-the-badge)
-
-</center>
-
-<h3 align="center">
-    🔹
-    <a href="https://github.com/avinashnutalapati/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/avinashnutalapati/Portfolio/issues">Request Feature</a>
-</h3>
 
 ## TL;DR
 
