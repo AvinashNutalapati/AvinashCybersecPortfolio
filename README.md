@@ -5,7 +5,7 @@
 
 ## TL;DR
 
-Feel free to fork this repo to modify and make your own changes. Please give me proper credit by linking back to [Avinash Nutalapati](https://github.com/avinashnutalapati/Portfolio). Thank you!
+Feel free to fork this repo to modify and make your own changes. Thank you!
 
 ## Built With
 
