@@ -2,9 +2,7 @@
   Avinash Nutalapati's Cybersecurity Portfolio - v2.0<br/>
   <a href="https://avinashnutalapati.vercel.app/" target="_blank">avinashnutalapati.tech</a>
 </h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+
 
 <br/>
 
