@@ -94,7 +94,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://github.com/AvinashNutalapati/AvinashCybersecPortfolio"
+                href="https://x.com/geocyberwatch1/"
                 target="_blank"
                 rel="noreferrer"
               >
