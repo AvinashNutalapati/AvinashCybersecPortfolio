@@ -51,5 +51,5 @@ Here, you'll find all components used. Edit to add your personal information.
 
 Give a ⭐ if you like this website!
 
-<a href="https://www.buymeacoffee.com/avinashnuta" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="60px" width="217px" ></a>
+<a href="https://www.buymeacoffee.com/avinashnutu" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="60px" width="217px" ></a>
 
