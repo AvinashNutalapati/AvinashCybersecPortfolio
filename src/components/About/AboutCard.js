@@ -15,7 +15,7 @@ function AboutCard() {
             Additionally, I have around 5 Years of Work experience. 
             <br />
             <br />
-            Apart from Securing Digital Assets, some other activities that I love to do!
+            Apart from Securing Digital Assets, other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
