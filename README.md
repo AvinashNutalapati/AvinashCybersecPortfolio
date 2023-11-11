@@ -9,7 +9,7 @@ Feel free to fork this repo to modify and make your own changes. Thank you!
 
 ## Built With
 
-My personal cybersecurity portfolio <a href="https://avinashnutalapati.vercel.app/" target="_blank">avinashnutalapati.tech</a> showcases my GitHub projects, resume, and technical skills in cybersecurity.<br/>
+My personal cybersecurity portfolio <a href="[https://avinashnutalapati.github.io/AvinashCybersecPortfolio/]" target="_blank">Avinash's Site</a> showcases my GitHub projects, resume, and technical skills in cybersecurity.<br/>
 
 This project utilizes the following technologies:
 
