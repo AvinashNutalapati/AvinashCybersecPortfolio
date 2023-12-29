@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Avinash Nutalapati </span>
             from <span className="purple"> Boston, MA. </span>
-            <br /> I am a Student pursuing Masters in Cybersecurity at Northeastern University.
+            <br /> I recently graduated with a Master of Science in Cybersecurity from Northeastern University.
             <br />
             Additionally, I have around 5 Years of Work experience. 
             <br />
