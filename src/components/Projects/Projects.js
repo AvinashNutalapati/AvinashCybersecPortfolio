@@ -4,6 +4,8 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import SecureCoding from "../../Assets/Projects/SecureCoding.png";
 import Attacks from "../../Assets/Projects/Attacks.png";
+import SplunkEs from "../../Assets/Projects/SplunkEs.jpeg";
+
 
 
 function Projects() {
@@ -37,6 +39,17 @@ function Projects() {
               description="My Personal Experiments on writing an Attack Code."
               ghLink="https://github.com/AvinashNutalapati/Attacks"
               demoLink="https://github.com/AvinashNutalapati/Attacks"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={SplunkEs}
+              isBlog={false}
+              title="Splunk Home Lab Set Up"
+              description="How to setup a Splunk Home Lab using Docker Container"
+              ghLink="https://github.com/AvinashNutalapati/Attacks"
+              demoLink="https://www.linkedin.com/posts/avinash-nutalapati_cybersecurity-siem-splunk-activity-7115729259091877888-2xmA?utm_source=share&utm_medium=member_desktop"
             />
           </Col>
         </Row>
