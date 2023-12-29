@@ -25,7 +25,7 @@ function Projects() {
               imgPath={SecureCoding}
               isBlog={false}
               title="Secure Coding"
-              description="Fixing Vulnerabilities in C Language"
+              description="Fixing Vulnerabilities in C Language."
               ghLink="https://github.com/AvinashNutalapati/Fixing-Vulnerabilities-in-C-language"
               demoLink="https://github.com/AvinashNutalapati/Fixing-Vulnerabilities-in-C-language#readme"
             />
@@ -47,8 +47,14 @@ function Projects() {
               imgPath={SplunkEs}
               isBlog={false}
               title="Splunk Home Lab Set Up"
-              description="How to setup a Splunk Home Lab using Docker Container"
-              ghLink="https://github.com/AvinashNutalapati/Attacks"
+              description={
+                [
+                  "Discover the art of setting up a Splunk Home Lab using Docker Container.",
+                  "This guide is a gateway to enhancing your security expertise with a practical Splunk SIEM Home Lab setup. Perfect for aspiring Tier 1/2 SOC analysts, the lab covers essential skills like SOC tools, rules, queries, apps, and integrations, preparing you for real-world SOC scenarios."
+                ].map((line, index) => (
+                  <span key={index}>{line}<br /><br /></span>
+                ))
+              }
               demoLink="https://www.linkedin.com/posts/avinash-nutalapati_cybersecurity-siem-splunk-activity-7115729259091877888-2xmA?utm_source=share&utm_medium=member_desktop"
             />
           </Col>
