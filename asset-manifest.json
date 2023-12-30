@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AvinashCybersecPortfolio/static/css/main.79835ff4.css",
-    "main.js": "/AvinashCybersecPortfolio/static/js/main.cb5da417.js",
+    "main.js": "/AvinashCybersecPortfolio/static/js/main.3a55dc1b.js",
     "static/js/415.4d6acbeb.chunk.js": "/AvinashCybersecPortfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/AvinashCybersecPortfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Attacks.png": "/AvinashCybersecPortfolio/static/media/Attacks.a94d2b56e7878eff34ca.png",
@@ -16,12 +16,12 @@
     "static/media/pre.svg": "/AvinashCybersecPortfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/AvinashCybersecPortfolio/index.html",
     "main.79835ff4.css.map": "/AvinashCybersecPortfolio/static/css/main.79835ff4.css.map",
-    "main.cb5da417.js.map": "/AvinashCybersecPortfolio/static/js/main.cb5da417.js.map",
+    "main.3a55dc1b.js.map": "/AvinashCybersecPortfolio/static/js/main.3a55dc1b.js.map",
     "415.4d6acbeb.chunk.js.map": "/AvinashCybersecPortfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/AvinashCybersecPortfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.79835ff4.css",
-    "static/js/main.cb5da417.js"
+    "static/js/main.3a55dc1b.js"
   ]
 }
