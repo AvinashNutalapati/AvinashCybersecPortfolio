@@ -711,6 +711,15 @@ button:focus {
   animation-fill-mode: forwards;
   animation-duration: 0.85s;
 }
+
+.video-project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
 @keyframes likeAnimation {
   0% {
     transform: scale(1.5);
