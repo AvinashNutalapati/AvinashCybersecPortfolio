@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/AvinashCybersecPortfolio/static/css/main.79835ff4.css",
-    "main.js": "/AvinashCybersecPortfolio/static/js/main.3a55dc1b.js",
+    "main.css": "/AvinashCybersecPortfolio/static/css/main.8a6a89d6.css",
+    "main.js": "/AvinashCybersecPortfolio/static/js/main.13c5f7ca.js",
     "static/js/415.4d6acbeb.chunk.js": "/AvinashCybersecPortfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/AvinashCybersecPortfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/PhishDemo.mp4": "/AvinashCybersecPortfolio/static/media/PhishDemo.3e37a2cd93dde10b1480.mp4",
     "static/media/Attacks.png": "/AvinashCybersecPortfolio/static/media/Attacks.a94d2b56e7878eff34ca.png",
     "static/media/SecureCoding.png": "/AvinashCybersecPortfolio/static/media/SecureCoding.9ed9e150b3472ea64424.png",
     "static/media/logo.png": "/AvinashCybersecPortfolio/static/media/logo.450fd9340b484cc0767d.png",
@@ -15,13 +16,13 @@
     "static/media/avatar.svg": "/AvinashCybersecPortfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "static/media/pre.svg": "/AvinashCybersecPortfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/AvinashCybersecPortfolio/index.html",
-    "main.79835ff4.css.map": "/AvinashCybersecPortfolio/static/css/main.79835ff4.css.map",
-    "main.3a55dc1b.js.map": "/AvinashCybersecPortfolio/static/js/main.3a55dc1b.js.map",
+    "main.8a6a89d6.css.map": "/AvinashCybersecPortfolio/static/css/main.8a6a89d6.css.map",
+    "main.13c5f7ca.js.map": "/AvinashCybersecPortfolio/static/js/main.13c5f7ca.js.map",
     "415.4d6acbeb.chunk.js.map": "/AvinashCybersecPortfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/AvinashCybersecPortfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79835ff4.css",
-    "static/js/main.3a55dc1b.js"
+    "static/css/main.8a6a89d6.css",
+    "static/js/main.13c5f7ca.js"
   ]
 }
