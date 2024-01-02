@@ -6,6 +6,7 @@ import SecureCoding from "../../Assets/Projects/SecureCoding.png";
 import Attacks from "../../Assets/Projects/Attacks.png";
 import SplunkEs from "../../Assets/Projects/SplunkEs.jpeg";
 import MyVideo from '../../Assets/Videos/PhishDemo.mp4';
+import Encryption from '../../Assets/Projects/Encryption.png';
 
 function Projects() {
   return (
@@ -26,7 +27,7 @@ function Projects() {
               title="Secure Coding"
               description="Fixing Vulnerabilities in C Language."
               ghLink="https://github.com/AvinashNutalapati/Fixing-Vulnerabilities-in-C-language"
-              demoLink="https://github.com/AvinashNutalapati/Fixing-Vulnerabilities-in-C-language#readme"
+              
             />
           </Col>
 
@@ -37,7 +38,7 @@ function Projects() {
               title="Attacks"
               description="My Personal Experiments on writing an Attack Code."
               ghLink="https://github.com/AvinashNutalapati/Attacks"
-              demoLink="https://github.com/AvinashNutalapati/Attacks"
+              
             />
           </Col>
 
@@ -63,6 +64,17 @@ function Projects() {
               videoPath={MyVideo}
               title="How to Create a Phishing Website?"
               description="!! Only For Educational Purposes !!"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Encryption}
+              isBlog={false}
+              title="Encryption"
+              description="Encrypted Client-Server Communication."
+              ghLink="https://github.com/AvinashNutalapati/Encryption"
+              
             />
           </Col>
         </Row>
