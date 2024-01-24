@@ -7,6 +7,8 @@ import Attacks from "../../Assets/Projects/Attacks.png";
 import SplunkEs from "../../Assets/Projects/SplunkEs.jpeg";
 import MyVideo from '../../Assets/Videos/PhishDemo.mp4';
 import Encryption from '../../Assets/Projects/Encryption.png';
+import LNGExportPDF from '../../Assets/Projects/LNGExport.pdf';
+import LNGExportPNG from '../../Assets/Projects/LNGExport.png';
 
 function Projects() {
   return (
@@ -74,6 +76,17 @@ function Projects() {
               title="Encryption"
               description="Encrypted Client-Server Communication."
               ghLink="https://github.com/AvinashNutalapati/Encryption"
+              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={LNGExportPNG}
+              isBlog={false}
+              title="Security Risks of LNG Export from USA to Europe"
+              description="The Report talks about Cascading Effects, Node Degrees and Resilience of a given Network and suggests Mitigations."
+              pdfLink={LNGExportPDF}
               
             />
           </Col>
