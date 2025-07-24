@@ -8,6 +8,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import cisspLogo from '../../Assets/Logos/cissp.png';
 
 function Home2() {
   return (
@@ -51,6 +52,14 @@ function Home2() {
                 <b className="purple"> Much Secured Environment. </b>
               </i>
             </p>
+            <div style={{ margin: '1.5em 0 1em 0', textAlign: 'left', display: 'flex', alignItems: 'center', gap: '1em' }}>
+              <a href="https://www.credly.com/badges/58733fb2-9917-4e10-9616-66936503280b/public_url" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                <img src={cisspLogo} alt="CISSP Badge" style={{ width: 60, height: 60, borderRadius: 8, boxShadow: '0 2px 8px rgba(44,62,80,0.14)', background: '#fff', marginRight: 12 }} />
+                <span style={{ fontWeight: 600, color: 'var(--imp-text-color)', fontSize: '1.1em' }}>
+                  Certified Information Systems Security Professional (CISSP)
+                </span>
+              </a>
+            </div>
           </Col>
           <Col md={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingBottom: 30 }}>
             <Tilt>

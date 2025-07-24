@@ -21,7 +21,7 @@ function Home() {
                 </span>
               </h1>
               <h1 className="heading-name" style={{ textAlign: 'left', fontWeight: 800, marginBottom: 0 }}>
-                I'M <span className="main-name">Avinash Nutalapati</span>
+                I'M <span className="main-name">Avinash Nutalapati</span>, <span className="main-name" style={{ fontSize: '0.8em', fontWeight: 600 }}>CISSP</span>
               </h1>
               <div style={{ padding: '40px 0 0 0', textAlign: 'left' }}>
                 <Type />
