@@ -1,0 +1,124 @@
+.timeline-section {
+  position: relative;
+  background-image: var(--section-background-color);
+  color: white;
+}
+
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-year-marker {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #5dade2;
+  opacity: 0.18;
+  margin-bottom: 0.2em;
+  margin-left: -1.5em;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  user-select: none;
+}
+
+@media (max-width: 767px) {
+  .timeline-year-marker {
+    font-size: 2em;
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.75rem;
+  padding-left: 2.2rem;
+  border-left: 3px solid #c770f0;
+  /* Add space for year marker */
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Date */
+.timeline-date {
+  font-weight: 600;
+  color: #c770f0;
+  margin-bottom: 0.35rem;
+  font-size: 1.05em;
+}
+
+/* Entry wrapper */
+.timeline-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Logo column */
+.timeline-logo {
+  flex: 0 0 80px;
+}
+
+.timeline-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 6px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.14);
+  object-fit: contain;
+}
+
+/* Content card */
+.timeline-content {
+  background: rgba(30, 20, 50, 0.7);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(100, 50, 150, 0.08);
+  flex: 1 1 200px;
+}
+
+.timeline-title {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: var(--imp-text-color);
+  margin-bottom: 0.25rem;
+  word-break: break-word;
+}
+
+.timeline-desc {
+  font-size: 1em;
+  color: var(--main-text);
+  margin: 0;
+}
+
+/* Heading */
+.project-heading {
+  color: #ffffff;
+  font-size: 2.3em;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-top: 4.5rem;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 767px) {
+  .timeline-item {
+    padding-left: 1rem;
+  }
+  .timeline-entry {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .timeline-logo {
+    margin-bottom: 1rem;
+  }
+  .project-heading {
+    margin-top: 6rem;
+    font-size: 1.6em;
+  }
+}

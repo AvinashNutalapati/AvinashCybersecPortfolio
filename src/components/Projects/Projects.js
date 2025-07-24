@@ -9,6 +9,7 @@ import MyVideo from '../../Assets/Videos/PhishDemo.mp4';
 import Encryption from '../../Assets/Projects/Encryption.png';
 import LNGExportPDF from '../../Assets/Projects/LNGExport.pdf';
 import LNGExportPNG from '../../Assets/Projects/LNGExport.png';
+import "../../styles/projects.css";
 
 function Projects() {
   return (

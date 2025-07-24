@@ -1,6 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "./style.css";
+import "./styles/navbar.css";
+import "./styles/home.css";
+import "./styles/about.css";
+import "./styles/projects.css";
+import "./styles/timeline.css";
+import "./styles/footer.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 

@@ -1,0 +1,177 @@
+/* Navbar Section */
+.sticky {
+  background-color: #1b1a2ea9;
+  transition: all 0.3s ease-out 0s;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
+  backdrop-filter: blur(15px);
+}
+
+.navbar {
+  position: fixed;
+  transition: all 0.3s ease-out 0s;
+  padding: 0.3rem 2rem;
+  font-size: 1.2rem;
+}
+
+.navbar-toggler {
+  position: relative;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: #be50f4;
+  height: 4px;
+  width: 27px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transform: rotate(0deg);
+  left: 0;
+  opacity: 1;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: 0;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  transition: transform 0.35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(135deg);
+  opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(-135deg);
+  opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    background-color: #181a27;
+  }
+  .navbar-nav .nav-item a::after {
+    display: none;
+  }
+  .nav-link {
+    padding: 0.7rem 1rem;
+  }
+}
+
+.navbar-brand {
+  color: rgb(250, 250, 250);
+}
+
+.logo {
+  height: 1.4em;
+  width: 2.5em;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  position: relative;
+  z-index: 1;
+  transition: color 0.2s;
+}
+
+/* Blog nav link always white */
+.navbar-nav .nav-link[href*="blog"],
+.navbar-nav .nav-link[href*="Blogs"],
+.navbar-nav .nav-link[href*="Blog"] {
+  color: white !important;
+}
+
+/* Interactive ameba background for nav links */
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(0.95);
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(120deg, #c770f0 60%, #6d20c5d7 100%);
+  border-radius: 40% 60% 60% 40% / 50% 40% 60% 50%;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.35s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link:focus::before {
+  opacity: 0.7;
+  transform: translateY(-50%) scale(1.08) skew(-2deg, 2deg);
+  border-radius: 50% 50% 60% 40% / 60% 40% 50% 50%;
+}
+
+.navbar-nav .nav-item.active .nav-link::before {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.12) skew(-3deg, 3deg);
+  border-radius: 60% 40% 50% 50% / 50% 60% 40% 60%;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.8rem 1rem;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-item a {
+  font-weight: 400;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-nav .nav-item a::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 0;
+  border-radius: 16px;
+  background: #c95bf5;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+}
+
+.navbar-nav .nav-item a:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-item.active .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:focus {
+  outline: none;
+  box-shadow: none;
+} 
