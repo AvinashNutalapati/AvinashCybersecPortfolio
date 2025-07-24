@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/AvinashCybersecPortfolio/static/css/main.8a6a89d6.css",
-    "main.js": "/AvinashCybersecPortfolio/static/js/main.74f3cc37.js",
-    "static/js/415.4d6acbeb.chunk.js": "/AvinashCybersecPortfolio/static/js/415.4d6acbeb.chunk.js",
-    "static/js/787.1ed0c42c.chunk.js": "/AvinashCybersecPortfolio/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/AvinashCybersecPortfolio/static/css/main.27f45752.css",
+    "main.js": "/AvinashCybersecPortfolio/static/js/main.681511d5.js",
+    "static/js/415.fc063c41.chunk.js": "/AvinashCybersecPortfolio/static/js/415.fc063c41.chunk.js",
+    "static/js/787.f6e65957.chunk.js": "/AvinashCybersecPortfolio/static/js/787.f6e65957.chunk.js",
     "static/media/PhishDemo.mp4": "/AvinashCybersecPortfolio/static/media/PhishDemo.3e37a2cd93dde10b1480.mp4",
     "static/media/LNGExport.pdf": "/AvinashCybersecPortfolio/static/media/LNGExport.dabb68b2d64c2a847830.pdf",
     "static/media/Encryption.png": "/AvinashCybersecPortfolio/static/media/Encryption.851a4875627e4e364b8f.png",
@@ -11,7 +11,6 @@
     "static/media/SecureCoding.png": "/AvinashCybersecPortfolio/static/media/SecureCoding.9ed9e150b3472ea64424.png",
     "static/media/logo.png": "/AvinashCybersecPortfolio/static/media/logo.450fd9340b484cc0767d.png",
     "static/media/LNGExport.png": "/AvinashCybersecPortfolio/static/media/LNGExport.c453aadfa4b795088c1f.png",
-    "static/media/Avinash Resume.pdf": "/AvinashCybersecPortfolio/static/media/Avinash Resume.ec869df6e6176351f396.pdf",
     "static/media/home-main.svg": "/AvinashCybersecPortfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
     "static/media/about.png": "/AvinashCybersecPortfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/SplunkEs.jpeg": "/AvinashCybersecPortfolio/static/media/SplunkEs.e206250d4cf587f4735f.jpeg",
@@ -19,13 +18,13 @@
     "static/media/avatar.svg": "/AvinashCybersecPortfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "static/media/pre.svg": "/AvinashCybersecPortfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/AvinashCybersecPortfolio/index.html",
-    "main.8a6a89d6.css.map": "/AvinashCybersecPortfolio/static/css/main.8a6a89d6.css.map",
-    "main.74f3cc37.js.map": "/AvinashCybersecPortfolio/static/js/main.74f3cc37.js.map",
-    "415.4d6acbeb.chunk.js.map": "/AvinashCybersecPortfolio/static/js/415.4d6acbeb.chunk.js.map",
-    "787.1ed0c42c.chunk.js.map": "/AvinashCybersecPortfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.27f45752.css.map": "/AvinashCybersecPortfolio/static/css/main.27f45752.css.map",
+    "main.681511d5.js.map": "/AvinashCybersecPortfolio/static/js/main.681511d5.js.map",
+    "415.fc063c41.chunk.js.map": "/AvinashCybersecPortfolio/static/js/415.fc063c41.chunk.js.map",
+    "787.f6e65957.chunk.js.map": "/AvinashCybersecPortfolio/static/js/787.f6e65957.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a6a89d6.css",
-    "static/js/main.74f3cc37.js"
+    "static/css/main.27f45752.css",
+    "static/js/main.681511d5.js"
   ]
 }
