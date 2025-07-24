@@ -85,10 +85,10 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/timeline"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Timeline
               </Nav.Link>
             </Nav.Item>
 

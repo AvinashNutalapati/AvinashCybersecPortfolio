@@ -13,9 +13,9 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+        <Row className="align-items-center" style={{ marginBottom: '2rem' }}>
+          <Col md={8} className="home-about-description" style={{ paddingBottom: 30 }}>
+            <h1 style={{ fontSize: "2.6em", fontWeight: 700 }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
@@ -52,19 +52,19 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          <Col md={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingBottom: 30 }}>
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid" alt="avatar" style={{ maxHeight: '220px', borderRadius: '50%', boxShadow: '0 4px 24px rgba(100,50,150,0.12)' }} />
             </Tilt>
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+          <Col md={12} className="home-about-social" style={{ marginTop: '1.5rem' }}>
+            <h1 style={{ fontWeight: 700 }}>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
-            <ul className="home-about-social-links">
+            <ul className="home-about-social-links" style={{ display: 'flex', justifyContent: 'center', gap: '18px', padding: 0, margin: 0 }}>
               <li className="social-icons">
                 <a
                   href="https://github.com/AvinashNutalapati"

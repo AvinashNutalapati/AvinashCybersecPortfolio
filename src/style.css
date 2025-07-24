@@ -750,3 +750,54 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* Timeline Section Styles */
+.timeline-section {
+  position: relative !important;
+  padding-top: 110px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2.5rem;
+  border-left: 3px solid #c770f0;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #c770f0;
+  margin-bottom: 0.3rem;
+  font-size: 1.1em;
+}
+
+.timeline-content {
+  background: rgba(30, 20, 50, 0.7);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(100, 50, 150, 0.08);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .timeline-item {
+    padding-left: 1.2rem;
+  }
+  .timeline-content {
+    padding: 0.7rem 1rem;
+  }
+}

@@ -8,14 +8,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Avinash Nutalapati </span>
-            from <span className="purple"> Boston, MA. </span>
-            <br /> I recently graduated with a Master of Science in Cybersecurity from Northeastern University.
-            <br />
-            Additionally, I have around 5 Years of Work experience. 
-            <br />
-            <br />
-            Apart from Securing Digital Assets, other activities that I love to do!
+            Hi, I'm <span className="purple">Avinash Nutalapati</span>, a cybersecurity professional with a Master's from Northeastern University and 5+ years of experience across security operations, threat analysis, and vulnerability management. I've contributed to leading organizations, enjoy solving complex security challenges, and am passionate about building resilient digital environments. Beyond work, I love to keep learning and sharing knowledge in the cybersecurity community.
           </p>
           <ul>
             <li className="about-activity">

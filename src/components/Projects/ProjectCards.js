@@ -6,20 +6,20 @@ import { BsGithub, BsFileEarmarkText } from "react-icons/bs"; // Importing addit
 
 function ProjectCards(props) {
   return (
-    <Card className="project-card-view">
+    <Card className="project-card-view" style={{ borderRadius: '16px', boxShadow: '0 4px 24px rgba(100,50,150,0.10)', padding: '10px', minHeight: '420px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
       {props.imgPath ? (
-        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+        <Card.Img variant="top" src={props.imgPath} alt="card-img" style={{ borderRadius: '12px', maxHeight: '180px', objectFit: 'cover' }} />
       ) : props.videoPath ? (
-        <div className="video-container" style={{ width: '100%', height: 'auto' }}>
-          <video width="100%" height="auto" controls>
+        <div className="video-container" style={{ width: '100%', height: '180px', borderRadius: '12px', overflow: 'hidden', marginBottom: '1rem' }}>
+          <video width="100%" height="100%" controls style={{ borderRadius: '12px', objectFit: 'cover' }}>
             <source src={props.videoPath} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
       ) : null}
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+      <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+        <Card.Title style={{ fontWeight: 700 }}>{props.title}</Card.Title>
+        <Card.Text style={{ textAlign: "justify", marginBottom: '1rem' }}>
           {props.description}
         </Card.Text>
         {props.ghLink && (

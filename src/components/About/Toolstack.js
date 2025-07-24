@@ -17,11 +17,14 @@ import {
   SiGitlab,
   SiGithub,
   SiGit,
-  SiJenkins
+  SiJenkins,
+  SiSonarcloud // For Sonatype/Nexus (closest available)
 } from "react-icons/si";
+import { FaShieldAlt } from "react-icons/fa"; // For ArmorCode and Cycode (placeholder)
+// import cycodeLogo from "../../Assets/icons/cycode-logo.png"; // Not available, use placeholder
 
 function Toolstack() {
-  const descriptionStyle = { fontSize: '12px', textAlign: 'center' }; // Adjust font size as needed
+  const descriptionStyle = { fontSize: '12px', textAlign: 'center' };
 
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
@@ -93,6 +96,24 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiJenkins />
         <p style={descriptionStyle}>Jenkins</p>
+      </Col>
+      {/* New tools below */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSonarcloud />
+        <p style={descriptionStyle}>Nexus/Sonatype</p>
+      </Col>
+      {/* <Col xs={4} md={2} className="tech-icons">
+        <SiContrast />
+        <p style={descriptionStyle}>Contrast</p>
+      </Col> */}
+      <Col xs={4} md={2} className="tech-icons">
+        <FaShieldAlt />
+        <p style={descriptionStyle}>ArmorCode</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        {/* Placeholder for Cycode, replace with logo if available */}
+        <FaShieldAlt />
+        <p style={descriptionStyle}>Cycode</p>
       </Col>
     </Row>
   );

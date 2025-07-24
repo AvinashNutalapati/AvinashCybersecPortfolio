@@ -11,31 +11,27 @@ function Home() {
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+          <Row className="align-items-center">
+            <Col md={7} className="home-header" style={{ paddingTop: 60, paddingBottom: 30 }}>
+              <h1 className="heading" style={{ paddingBottom: 10, textAlign: 'left', fontWeight: 700 }}>
+                Hi There!{' '}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
-
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> Avinash Nutalapati</strong>
+              <h1 className="heading-name" style={{ textAlign: 'left', fontWeight: 800, marginBottom: 0 }}>
+                I'M <span className="main-name">Avinash Nutalapati</span>
               </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: '40px 0 0 0', textAlign: 'left' }}>
                 <Type />
               </div>
             </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingBottom: 20, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                style={{ maxHeight: '400px', borderRadius: '18px', boxShadow: '0 4px 24px rgba(100,50,150,0.12)' }}
               />
             </Col>
           </Row>
