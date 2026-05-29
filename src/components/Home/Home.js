@@ -1,8 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { BsShieldLockFill } from "react-icons/bs";
+import { FiArrowUpRight } from "react-icons/fi";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
+import FeaturedTalk from "./FeaturedTalk";
 import Type from "./Type";
 import "../../styles/home.css";
 
@@ -13,32 +18,65 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row className="align-items-center">
-            <Col md={7} className="home-header" style={{ paddingTop: 60, paddingBottom: 30 }}>
-              <h1 className="heading" style={{ paddingBottom: 10, textAlign: 'left', fontWeight: 700 }}>
-                Hi There!{' '}
+            <Col md={7} className="home-header">
+              <span className="hero-status">
+                <span className="hero-status-dot" />
+                Available for security engagements
+              </span>
+
+              <p className="hero-eyebrow mono">&gt; whoami</p>
+
+              <h1 className="hero-title">
+                Hi, I'm <span className="gradient-text">Avinash&nbsp;Nutalapati</span>
                 <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
+                  {" "}👋🏻
                 </span>
               </h1>
-              <h1 className="heading-name" style={{ textAlign: 'left', fontWeight: 800, marginBottom: 0 }}>
-                I'M <span className="main-name">Avinash Nutalapati</span>, <span className="main-name" style={{ fontSize: '0.8em', fontWeight: 600 }}>CISSP</span>
-              </h1>
-              <div style={{ padding: '40px 0 0 0', textAlign: 'left' }}>
+
+              <p className="hero-cert">
+                <BsShieldLockFill /> Certified Information Systems Security Professional
+                <span className="hero-cert-tag mono">CISSP</span>
+              </p>
+
+              <div className="hero-type">
                 <Type />
               </div>
+
+              <p className="hero-sub">
+                I secure web technologies and products, hunt down vulnerabilities at any
+                scale, and help build resilient digital environments.
+              </p>
+
+              <div className="hero-actions">
+                <Link to="/project" className="btn-cyber">
+                  <AiOutlineFundProjectionScreen /> View Projects
+                </Link>
+                <a
+                  href="https://github.com/AvinashNutalapati"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-cyber-outline"
+                >
+                  GitHub <FiArrowUpRight />
+                </a>
+              </div>
             </Col>
-            <Col md={5} style={{ paddingBottom: 20, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: '400px', borderRadius: '18px', boxShadow: '0 4px 24px rgba(100,50,150,0.12)' }}
-              />
+
+            <Col md={5} className="hero-visual-col">
+              <div className="hero-visual">
+                <div className="hero-visual-glow" />
+                <img
+                  src={homeLogo}
+                  alt="home pic"
+                  className="img-fluid hero-img"
+                />
+              </div>
             </Col>
           </Row>
         </Container>
       </Container>
       <Home2 />
+      <FeaturedTalk />
     </section>
   );
 }

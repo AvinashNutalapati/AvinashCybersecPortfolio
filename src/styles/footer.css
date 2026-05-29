@@ -1,40 +1,71 @@
-/* Footer Section */
+/* ================= FOOTER ================= */
 .footer {
-  background-color: rgb(10, 4, 22);
-  bottom: 0;
-  padding-top: 10px;
-  padding-bottom: 8px;
-}
-.footer-copywright {
-  text-align: center;
-}
-
-.footer-body {
+  position: relative;
   z-index: 1;
-  text-align: center;
+  padding: 1.6rem 1rem;
+  background: rgba(7, 10, 17, 0.7);
+  border-top: 1px solid var(--surface-border);
+  backdrop-filter: blur(10px);
 }
 
-@media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center;
-  }
-  .footer-body {
-    text-align: center;
-  }
+.footer-copywright {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .footer h3 {
-  font-size: 1em;
-  color: white;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: var(--text-dim);
+  margin: 0.5em 0;
 }
+
 .footer-icons {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  list-style: none;
+  margin: 0.5em 0;
   padding: 0;
 }
 
-.blockquote-footer {
-  color: #a588c0;
-} 
+@media (max-width: 767px) {
+  .footer-copywright,
+  .footer-body {
+    justify-content: center;
+  }
+  .footer h3 { text-align: center; }
+}
+.footer-icons .social-icons { list-style: none; }
+.footer-icons .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--text-dim) !important;
+  font-size: 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.footer-icons .social-icons a:hover {
+  transform: translateY(-4px);
+  color: var(--accent) !important;
+  border-color: var(--surface-border-strong);
+  box-shadow: 0 10px 22px -12px var(--accent-glow);
+}
+.footer-icons .social-icons a img {
+  border-radius: 6px;
+  width: auto;
+  height: auto;
+}
+
+.blockquote-footer { color: var(--text-faint); }

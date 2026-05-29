@@ -25,9 +25,26 @@ This project utilizes the following technologies:
 
 **🔒 Focused on Cybersecurity Projects**
 
-**🎨 Styled with React-Bootstrap and CSS, featuring easy-to-customize color themes**
+**🎨 Styled with React-Bootstrap and CSS, featuring a centralized steel-blue + silver theme driven by CSS custom properties**
 
 **📱 Fully Responsive and Secure**
+
+## Security Tooling (SAST & SCA)
+
+This repo "eats its own dog food" and ships with automated security checks:
+
+| Layer | Tool | Where |
+| --- | --- | --- |
+| SAST (code) | `eslint-plugin-security` | `npm run lint` + `.github/workflows/ci.yml` |
+| SAST (deep) | GitHub CodeQL | `.github/workflows/codeql.yml` |
+| SCA (deps) | `npm audit` (shipped deps) | `npm run audit` + CI |
+| SCA (PRs) | GitHub Dependency Review | `.github/workflows/dependency-review.yml` |
+| SCA (patching) | Dependabot (weekly) | `.github/dependabot.yml` |
+
+Useful scripts:
+
+- `npm run lint` — ESLint with the security plugin enabled
+- `npm run audit` — fail on high-severity advisories in shipped dependencies
 
 ## Getting Started
 

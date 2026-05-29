@@ -7,8 +7,6 @@ import Attacks from "../../Assets/Projects/Attacks.png";
 import SplunkEs from "../../Assets/Projects/SplunkEs.jpeg";
 import MyVideo from '../../Assets/Videos/PhishDemo.mp4';
 import Encryption from '../../Assets/Projects/Encryption.png';
-import LNGExportPDF from '../../Assets/Projects/LNGExport.pdf';
-import LNGExportPNG from '../../Assets/Projects/LNGExport.png';
 import "../../styles/projects.css";
 
 function Projects() {
@@ -16,10 +14,11 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <h1 className="project-heading" style={{ fontWeight: 700, marginBottom: '1.5rem' }}>
-          My Recent <strong className="purple">Works</strong>
+        <span className="section-label mono">{"// portfolio"}</span>
+        <h1 className="project-heading">
+          My Recent <span className="gradient-text">Works</span>
         </h1>
-        <p style={{ color: "white", marginBottom: '2.5rem' }}>
+        <p className="project-subheading">
           Here are a few projects I've worked on recently.
         </p>
         <Row className="g-4 justify-content-center">

@@ -1,76 +1,120 @@
-/* About Section */
+/* ================= ABOUT ================= */
 .about-section {
   position: relative;
-  background-image: var(--section-background-color);
-  color: white;
-  margin-top: 4.5rem;
+  z-index: 1;
+  color: var(--text);
+  padding: 8rem 0 5rem;
+  min-height: 100vh;
 }
 
-.project-heading {
-  color: white;
-  font-size: 2.3em;
-  font-weight: 500;
-  padding-top: 10px;
-  margin-top: 2.5rem;
+.about-intro-row { margin-bottom: 2rem; }
+
+.about-title {
+  font-family: "Sora", sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: 1.3rem;
 }
 
-@media (max-width: 767px) {
-  .about-section {
-    margin-top: 6rem;
-  }
-  .project-heading {
-    margin-top: 4rem;
-    font-size: 1.5em;
-  }
-}
-
-.tech-icons {
-  font-size: 4.5em;
-  margin: 15px;
-  padding: 10px;
-  opacity: 0.93;
-  border: 1.7px solid rgba(200, 137, 230, 0.637);
-  vertical-align: middle;
-  text-align: center;
-  border-radius: 5px;
-  display: table;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
-  overflow: hidden;
-  transition: all 0.4s ease 0s;
-}
-
-@media (max-width: 767px) {
-  .tech-icons {
-    margin: 10px;
-  }
-}
-
-.tech-icons:hover {
-  transform: scale(1.05);
-  overflow: hidden;
-  border: 2.2px solid rgba(197, 115, 230, 0.883);
-}
-.tech-icon-images {
-  padding: 20px;
-  line-height: 1.6;
-}
-
+/* quote card */
 .quote-card-view {
-  border: none;
-  color: white;
-  background-color: transparent;
-  box-shadow: var(--card-shadow);
-  border-radius: var(--card-radius);
+  color: var(--text);
+  padding: 0.5rem;
+}
+.about-quote-text {
+  color: var(--text-dim);
+  font-size: 1.04rem;
+  line-height: 1.85;
+  text-align: left;
+}
+.about-activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0;
+}
+.about-activity {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text);
+  padding: 0.35rem 0;
+}
+.about-activity svg { color: var(--accent); flex-shrink: 0; }
+.about-quote-tagline {
+  color: var(--accent);
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+.about-quote-author { color: var(--text-faint); }
+
+/* about image */
+.about-img { display: flex; justify-content: center; align-items: center; }
+.about-img-frame {
+  position: relative;
+  padding: 0.6rem;
+  border-radius: 24px;
+  border: 1px solid var(--surface-border);
+  background: var(--surface);
+}
+.about-img-frame::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 24px;
+  padding: 1px;
+  background: var(--accent-grad);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.5;
+}
+.about-img-frame img {
+  max-height: 260px;
+  border-radius: 18px;
+  display: block;
 }
 
-.about-activity {
-  list-style: none;
-  text-align: left;
-  padding-left: 1px;
+/* skills headings */
+.skills-heading {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
 }
+
+/* tech / tool icon grid */
+.tech-icons {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 3em;
+  margin: 12px;
+  padding: 1.2rem 0.5rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 16px;
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, color 0.35s ease;
+}
+.tech-icons p {
+  font-size: 0.8rem !important;
+  color: var(--text-dim);
+  margin: 0;
+  font-family: "JetBrains Mono", monospace;
+}
+.tech-icons:hover {
+  transform: translateY(-6px);
+  color: var(--accent);
+  border-color: var(--surface-border-strong);
+  box-shadow: 0 16px 36px -18px var(--accent-glow);
+}
+.tech-icons:hover p { color: var(--text); }
+.tech-icon-images { padding: 10px; }
 
 @media (max-width: 767px) {
-  .about-img {
-    padding-top: 0;
-  }
-} 
+  .about-section { padding: 6.5rem 0 3rem; }
+  .tech-icons { font-size: 2.2em; margin: 8px; }
+  .skills-heading { margin-top: 3rem; }
+}

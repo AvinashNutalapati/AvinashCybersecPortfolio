@@ -1,8 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: "Raleway", serif !important;
+  font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  color: var(--text) !important;
+  background-color: var(--bg) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  overflow-x: hidden;
+}
+
+/* Fixed ambient background: deep gradient + subtle blueprint grid + glow blobs */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(900px circle at 12% 8%, rgba(56, 189, 248, 0.10), transparent 45%),
+    radial-gradient(800px circle at 88% 18%, rgba(129, 140, 248, 0.10), transparent 45%),
+    radial-gradient(1000px circle at 50% 100%, rgba(45, 212, 191, 0.06), transparent 50%),
+    linear-gradient(160deg, #0a0e17 0%, #070a11 100%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 80%);
+  pointer-events: none;
+}
+
+h1, h2, h3, h4, h5, .heading-font {
+  font-family: "Sora", "Inter", sans-serif;
+}
+
+code, .mono {
+  font-family: "JetBrains Mono", monospace;
 }

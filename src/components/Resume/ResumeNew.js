@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 // Logo URLs – use local assets if available
+import capitalOneLogo from "../../Assets/Logos/Capital_One_logo.svg.png";
 import discoverLogo from "../../Assets/Logos/discover.png";
 import cignaLogo from "../../Assets/Logos/cigna.png";
 import nuLogo from "../../Assets/Logos/northeastern.png";
@@ -13,7 +14,15 @@ import "../../styles/timeline.css";
 
 const timelineItems = [
   {
-    date: "Mar 2024 – Present",
+    date: "Dec 2025 – Present",
+    logo: capitalOneLogo,
+    alt: "Capital One",
+    title: "Capital One – Manager, Vulnerability Analyst",
+    description:
+      "Manage enterprise vulnerability analysis and remediation programs, driving risk reduction across cloud and application security at scale.",
+  },
+  {
+    date: "Mar 2024 – Dec 2025",
     logo: discoverLogo,
     alt: "Discover",
     title: "Discover Financial Services – Riverwoods, IL",
@@ -70,27 +79,24 @@ const timelineItems = [
   },
 ];
 
-// Helper to extract year from date string
-function getYear(date) {
-  // Extracts the first 4-digit number (year) from the date string
-  const match = date.match(/\d{4}/);
-  return match ? match[0] : '';
-}
-
 function Timeline() {
   return (
     <Container fluid className="timeline-section">
       <Particle />
       <Container>
-        <h1 className="project-heading text-center mb-5">
-          My <span className="purple">Professional Timeline</span>
-        </h1>
+        <div className="timeline-head text-center">
+          <span className="section-label mono">{"// experience"}</span>
+          <h1 className="project-heading">
+            My <span className="gradient-text">Professional Timeline</span>
+          </h1>
+        </div>
         <Row className="justify-content-center">
-          <Col md={8}>
+          <Col md={9} lg={8}>
             <ul className="timeline-list">
               {timelineItems.map(({ date, logo, alt, title, description }, idx) => (
                 <li className="timeline-item" key={idx}>
-                  <span className="timeline-date">{date}</span>
+                  <span className="timeline-node" />
+                  <span className="timeline-date mono">{date}</span>
                   <div className="timeline-entry">
                     <div className="timeline-logo">
                       <img src={logo} alt={alt} />

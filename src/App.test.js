@@ -1,8 +1,14 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import { MemoryRouter } from 'react-router-dom';
+import NavBar from './components/Navbar';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders the portfolio navigation links', () => {
+  render(
+    <MemoryRouter>
+      <NavBar />
+    </MemoryRouter>
+  );
+  expect(screen.getByRole('navigation')).toBeInTheDocument();
+  expect(screen.getByText(/home/i)).toBeInTheDocument();
+  expect(screen.getByText(/projects/i)).toBeInTheDocument();
 });

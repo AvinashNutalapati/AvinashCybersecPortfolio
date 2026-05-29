@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -13,23 +13,19 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
-import { CgFileDocument } from "react-icons/cg";
 import "../styles/navbar.css";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
+  useEffect(() => {
+    function scrollHandler() {
+      updateNavbar(window.scrollY >= 20);
     }
-  }
-
-  window.addEventListener("scroll", scrollHandler);
+    window.addEventListener("scroll", scrollHandler, { passive: true });
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
 
   return (
     <Navbar
@@ -40,7 +36,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={logo} className="logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -107,6 +103,7 @@ function NavBar() {
               <Button
                 href="https://github.com/AvinashNutalapati/AvinashCybersecPortfolio"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="fork-btn-inner"
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
