@@ -1,0 +1,21 @@
+  name: Secure AI Pipeline
+  on:
+    push:
+    pull_request:
+    workflow_dispatch:          # lets you also run it by hand from the Actions tab
+  permissions:
+    contents: read
+    security-events: write      # required to post SAST/SCA results to the Security tab
+  jobs:
+    security:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+          with:
+            fetch-depth: 0       # full history so the secret scan works
+        - uses: AvinashNutalapati/secure-ai-pipeline@v2  # v2.0.3          
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}     # composite actions can't read secrets themselves
+          # with:
+          #   staging-url: ${{ vars.STAGING_URL }}        # optional: enables the ZAP DAST scan
+          #   fail-on-warnings: "false"
