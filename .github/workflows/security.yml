@@ -13,7 +13,7 @@
         - uses: actions/checkout@v4
           with:
             fetch-depth: 0       # full history so the secret scan works
-        - uses: AvinashNutalapati/secure-ai-pipeline@v2  # v2.0.3          
+        - uses: AvinashNutalapati/secure-ai-pipeline@v3  # v2.0.3          
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}     # composite actions can't read secrets themselves
           # with:
